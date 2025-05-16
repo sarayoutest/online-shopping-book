@@ -121,7 +121,7 @@ body {
 .nav__list {
   display: flex;
   list-style: none;
-  gap: 1.2rem;
+  gap: 1rem;
   position: relative;       
   bottom: auto;
 }
@@ -160,7 +160,7 @@ body {
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
-  gap: 2rem;
+  gap: 1.5rem;
   font: 1em sans-serif;
 }
 
