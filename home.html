@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <title>online Books</title>
+    </head>
+    <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+        <a href="#" class="nav__logo"> <i class="ri-book-3-line"></i>E-Book </a>
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                <a href="#Home" class="nav__link">
+                    <i class="ri-home-smile-line"></i>
+                    <span>Home</span>
+                </a>
+                </li>
+                <li class="nav__item">
+                <a href="#Services" class="nav__link">
+                  <i class="ri-bookmark-3-line"></i>
+                    <span>Services</span>
+                </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#Featured" class="nav__link">
+                      <i class="ri-book-3-line"></i>
+                      <span> Featured</span>
+                  </a>
+                  </li>
+                <li class="nav__item">
+                <a href="#Discount" class="nav__link">
+                  <i class="ri-price-tag-3-line"></i>
+                    <span>Discount</span>
+                </a>
+                </li>
+                <li class="nav__item">
+                <a href="#featured-articles" class="nav__link">
+                  <i class="ri-book-open-line"></i>
+                    <span>Articles</span>
+                </a>
+                </li>
+                <li class="nav__item">
+                <a href="#Testimonial" class="nav__link">
+                    <i class="ri-message-3-line"></i>
+                    <span> Testimonial</span>
+                </a>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="nav__actions" style="position: relative; ">
+            <a href="index.html"><i class="ri-user-line"> </i></a>
+            <button id="theme-button" class="ri-moon-line" aria-label="Toggle theme" ></button>
+            <div class="search-container">
+            <i class="ri-search-line search-button" id="search-button"></i>
+            <div class="search-dropdown"  id="search-dropdown">
+            <select class="form-select" id="search-select" aria-label="Search By Title..." >
+                <option selected="" hidden="">Search by Book Genre...</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Non-fiction">Non-fiction</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Biography">Biography</option>
+                <option value="History">History</option>
+                <option value="Romance">Romance</option>
+                <option value="Children's Books">Children's Books</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Education">Education</option>
+            </select>
+            </div></div>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="ri-shopping-cart-2-line"  id="cart-icon" style="font-size: 24px; position: relative; cursor: pointer;">
+                  <span id="cart-count" style="position: absolute; top: -8px; right: -8px; background-color: red; color: white; border-radius: 50%; padding: 3px 6px; font-size: 12px;">0</span>
+                </i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="cartDropdown" style="min-width: 250px;">
+                <div id="cart-items" style="display: none;" class="mb-2"></div>
+                <a href="cart.html" class="btn btn-primary btn-sm w-100">Show All Products</a>
+              </ul>
+            </div>
+          
+          </div>  
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+            <i class="ri-menu-line"></i>
+          </button>
+        </nav>
+        
+    </header>
+    <!--==================== HOME ====================-->
+    <main class="main">
+      <div class="container">
+      <section class="home section" id="Home">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h1 class="home__title">Browse & <br />Select E-Books</h1>
+              <p class="home__description">
+                Find the best e-books from your favorite writers, explore hundreds
+                of books with all possible categories, take advantage of the 50% discount and much more
+              </p>
+              <a href="#" class="button ">Explore Now</a>
+            </div>
+      
+            <div class="col-md-6">
+              <div id="featuredBooks" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                      <img src="assets/img/home-book-1.png" class="book-small" alt="Book 1">
+                      <img src="assets/img/home-book-4.png" class="book-large" alt="Book 2">
+                      <img src="assets/img/home-book-3.png" class="book-small" alt="Book 3">
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                      <img src="assets/img/home-book-4.png" class="book-small" alt="Book 4">
+                      <img src="assets/img/home-book-3.png" class="book-large" alt="Book 5">
+                      <img src="assets/img/home-book-1.png" class="book-small" alt="Book 6">
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                      <img src="assets/img/home-book-3.png" class="book-small" alt="Book 4">
+                      <img src="assets/img/home-book-1.png" class="book-large" alt="Book 5">
+                      <img src="assets/img/home-book-4.png" class="book-small" alt="Book 6">
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="Services">
+        <h2 class="section__title">services</h2>
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-truck-line"></i>
+            <h3 class="services__title">Free Shipping</h3>
+            <p class="services__description">Order More Than $100</p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-lock-2-line"></i>
+            <h3 class="services__title">Secure Payment</h3>
+            <p class="services__description">100% Secure Payment</p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-customer-service-2-line"></i>
+            <h3 class="services__title">24/7 Support</h3>
+            <p class="services__description">Call us anytime</p>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== FEATURED ====================-->
+      <section class="featured section" id="Featured">
+          <h2 class="section__title text-center mb-4">Featured Books</h2>
+          <div class="featured__container container d-flex flex-wrap justify-content-center gap-5">
+    
+    <article class="featured__card card p-3" style="width: 200px; position: relative; perspective: 1000px;">
+      <div class="card-inner" style="transition: transform 0.6s; transform-style: preserve-3d; position: relative;">
+        <!-- Front -->
+        <div class="card-front" style="backface-visibility: hidden;">
+          <img src="assets/img/book-4.png" alt="image" class="featured__img card-img-top" style="height: 140px; object-fit: cover; border-radius: 6px;" />
+          <h2 class="featured__title mt-2" style="font-size: 1.1rem;"> Pouring <br>Dreams</h2>
+          <div class="featured__prices mb-2">
+            <span class="featured__discount text-success fw-bold">$11.99</span>
+            <span class="featured__price text-muted text-decoration-line-through ms-2">$19.99</span>
+          </div>
+
+          <button class="add-to-cart button btn-sm w-100 mb-2"
+            data-id="1"
+            data-title="Pouring Dreams"
+            data-price="11.99"
+            data-image="assets/img/book-4.png">Add To Cart</button>
+
+          <div class="featured__actions d-flex justify-content-between">
+            <button class="btn btn-outline-secondary btn-sm search-btn" data-tooltip="Search" title="Search">
+              <i class="ri-search-line"></i>
+            </button>
+            <button class="btn btn-outline-danger btn-sm like-btn" data-tooltip="Like" title="Like">
+              <i class="ri-heart-3-line"></i>
+            </button>
+            <button class="btn btn-outline-info btn-sm view-btn" data-tooltip="View" title="View">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-back" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; background: white; padding: 15px; box-sizing: border-box; border-radius: 6px; transform: rotateY(180deg); overflow-y: auto; font-size: 0.9rem;">
+          <div class="details-content">
+          </div>
+          <button class="btn btn-sm btn-secondary mt-3 back-btn w-100">Back</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="featured__card card p-3" style="width: 200px; position: relative; perspective: 1000px;">
+      <div class="card-inner" style="transition: transform 0.6s; transform-style: preserve-3d; position: relative;">
+        <!-- Front -->
+        <div class="card-front" style="backface-visibility: hidden;">
+          <img src="assets/img/book-9.png" alt="image" class="featured__img card-img-top" style="height: 140px; object-fit: cover; border-radius: 6px;" />
+          <h2 class="featured__title mt-2" style="font-size: 1.1rem;">Bird <br> park</h2>
+          <div class="featured__prices mb-2">
+            <span class="featured__discount text-success fw-bold">$11.99</span>
+            <span class="featured__price text-muted text-decoration-line-through ms-2">$19.99</span>
+          </div>
+
+          <button class="add-to-cart button btn-sm w-100 mb-2"
+            data-id="2"
+            data-title="Bird park"
+            data-price="11.99"
+            data-image="assets/img/book-9.png">Add To Cart</button>
+
+          <div class="featured__actions d-flex justify-content-between">
+            <button class="btn btn-outline-secondary btn-sm search-btn" data-tooltip="Search" title="Search">
+              <i class="ri-search-line"></i>
+            </button>
+            <button class="btn btn-outline-danger btn-sm like-btn" data-tooltip="Like" title="Like">
+              <i class="ri-heart-3-line"></i>
+            </button>
+            <button class="btn btn-outline-info btn-sm view-btn" data-tooltip="View" title="View">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-back" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; background: white; padding: 15px; box-sizing: border-box; border-radius: 6px; transform: rotateY(180deg); overflow-y: auto; font-size: 0.9rem;">
+          <div class="details-content">
+          </div>
+          <button class="btn btn-sm btn-secondary mt-3 back-btn w-100">Back</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="featured__card card p-3" style="width: 200px; position: relative; perspective: 1000px;">
+      <div class="card-inner" style="transition: transform 0.6s; transform-style: preserve-3d; position: relative;">
+        <!-- Front -->
+        <div class="card-front" style="backface-visibility: hidden;">
+          <img src="assets/img/book-2.png" alt="image" class="featured__img card-img-top" style="height: 140px; object-fit: cover; border-radius: 6px;" />
+          <h2 class="featured__title mt-2" style="font-size: 1.1rem;">Simple & Minimalist</h2>
+          <div class="featured__prices mb-2">
+            <span class="featured__discount text-success fw-bold">$11.99</span>
+            <span class="featured__price text-muted text-decoration-line-through ms-2">$19.99</span>
+          </div>
+
+          <button class="add-to-cart button btn-sm w-100 mb-2"
+            data-id="4"
+            data-title="Simple & Minimalist"
+            data-price="11.99"
+            data-image="assets/img/book-2.png">Add To Cart</button>
+
+          <div class="featured__actions d-flex justify-content-between">
+            <button class="btn btn-outline-secondary btn-sm search-btn" data-tooltip="Search" title="Search">
+              <i class="ri-search-line"></i>
+            </button>
+            <button class="btn btn-outline-danger btn-sm like-btn" data-tooltip="Like" title="Like">
+              <i class="ri-heart-3-line"></i>
+            </button>
+            <button class="btn btn-outline-info btn-sm view-btn" data-tooltip="View" title="View">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-back" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; background: white; padding: 15px; box-sizing: border-box; border-radius: 6px; transform: rotateY(180deg); overflow-y: auto; font-size: 0.9rem;">
+          <div class="details-content">
+          </div>
+          <button class="btn btn-sm btn-secondary mt-3 back-btn w-100">Back</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="featured__card card p-3" style="width: 200px; position: relative; perspective: 1000px;">
+      <div class="card-inner" style="transition: transform 0.6s; transform-style: preserve-3d; position: relative;">
+        <!-- Front -->
+        <div class="card-front" style="backface-visibility: hidden;">
+          <img src="assets/img/book-3.png" alt="image" class="featured__img card-img-top" style="height: 140px; object-fit: cover; border-radius: 6px;" />
+          <h2 class="featured__title mt-2" style="font-size: 1.1rem;">Muted Color Poster Template</h2>
+          <div class="featured__prices mb-2">
+            <span class="featured__discount text-success fw-bold">$11.99</span>
+            <span class="featured__price text-muted text-decoration-line-through ms-2">$19.99</span>
+          </div>
+
+          <button class="add-to-cart button btn-sm w-100 mb-2"
+            data-id="5"
+            data-title="Muted Color Poster Template"
+            data-price="11.99"
+            data-image="assets/img/book-3.png">Add To Cart</button>
+
+          <div class="featured__actions d-flex justify-content-between">
+            <button class="btn btn-outline-secondary btn-sm search-btn" data-tooltip="Search" title="Search">
+              <i class="ri-search-line"></i>
+            </button>
+            <button class="btn btn-outline-danger btn-sm like-btn" data-tooltip="Like" title="Like">
+              <i class="ri-heart-3-line"></i>
+            </button>
+            <button class="btn btn-outline-info btn-sm view-btn" data-tooltip="View" title="View">
+              <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-back" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; backface-visibility: hidden; background: white; padding: 15px; box-sizing: border-box; border-radius: 6px; transform: rotateY(180deg); overflow-y: auto; font-size: 0.9rem;">
+          <div class="details-content">
+          </div>
+          <button class="btn btn-sm btn-secondary mt-3 back-btn w-100">Back</button>
+        </div>
+      </div>
+    </article>
+
+          </div>
+      </section>
+
+      <!--==================== DISCOUNT ====================-->
+      <section class="discount section" id="Discount">
+        <div class="container discount-section">
+          <div class="row w-100 align-items-center">
+            <div class="col-md-6 text-center">
+              <img src="assets/img/discount-book-1.png" alt="Book 1" class="book-img rotate-left">
+              <img src="assets/img/discount-book-2.png" alt="Book 2" class="book-img rotate-right">
+            </div>
+            <div class="col-md-6 discount-text text-md-start text-center mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1200">
+              <h2>Up to 50% Discount</h2>
+              <p>
+                Take advantage of our biggest sale yet! Get amazing discounts on selected books and magazines.
+                The more you buy, the more you save. Discover new reads and enjoy high-quality content for less.
+                Don’t miss out—offer valid for a limited time only!
+              </p>
+              <button class="shop-btn">Shop Show</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== Featured Articles ====================-->
+      <section class="articles-section" id="featured-articles">
+        <h2 class="section-title2"> Featured Articles - Read Now</h2>
+        <div class="article-cards">
+          <div class="article-card">
+            <img src="assets/img/1.png" alt="Reading Tips" class="article-image">
+            <div class="article-content">
+              <h3>5 Ways to Enjoy Daily Reading</h3>
+              <p>Discover simple strategies to turn reading into a daily habit that brings relaxation and knowledge.</p>
+              <a href="https://www.noor-book.com/en/" class="button">Read More</a>
+            </div>
+          </div>
+          <div class="article-card">
+            <img src="assets/img/2.jpg" alt="Inspiring Novels" class="article-image">
+            <div class="article-content">
+              <h3>Light Novels for the Weekend</h3>
+              <p>Relax with short, enjoyable novels—perfect for finishing over a cozy weekend.</p>
+              <a href="https://www.wattpad.com/stories/%D8%B1%D9%88%D8%A7%D9%8A%D8%A7%D8%AA" class="button">Read More</a>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section" id="Testimonial">
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Customer Reviews</h2>
+          <div class="row justify-content-center">
+        
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="card h-100 shadow-sm p-3">
+                <img src="assets/img/testimonial-perfil-3.png" class="card-img-top img-fluid rounded-circle mx-auto mt-2" alt="Customer Photo" style="width: 90px; height: 90px; object-fit: cover;">
+                <div class="card-body text-center p-2">
+                  <h5 class="card-title mb-2" style="font-size: 1.1rem;">John Smith</h5>
+                  <p class="card-text" style="font-size: 0.9rem; line-height: 1.3;">
+                    I had an amazing experience with this company. The customer service was prompt and very helpful, and the product quality exceeded my expectations.
+                  </p>
+                  <div style="font-size: 1.1rem;">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="card h-100 shadow-sm p-3">
+                <img src="assets/img/testimonial-perfil-2.png" class="card-img-top img-fluid rounded-circle mx-auto mt-2" alt="Customer Photo" style="width: 90px; height: 90px; object-fit: cover;">
+                <div class="card-body text-center p-2">
+                  <h5 class="card-title mb-2" style="font-size: 1.1rem;">Emily Johnson</h5>
+                  <p class="card-text" style="font-size: 0.9rem; line-height: 1.3;">
+                    The team was very professional and attentive to my needs. Delivery was on time and the product packaging was excellent.
+                  </p>
+                  <div style="font-size: 1.1rem;">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-secondary">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3 col-sm-6 mb-4">
+              <div class="card h-100 shadow-sm p-3">
+                <img src="assets/img/testimonial-perfil-1.png" class="card-img-top img-fluid rounded-circle mx-auto mt-2" alt="Customer Photo" style="width: 90px; height: 90px; object-fit: cover;">
+                <div class="card-body text-center p-2">
+                  <h5 class="card-title mb-2" style="font-size: 1.1rem;">Michael Brown</h5>
+                  <p class="card-text" style="font-size: 0.9rem; line-height: 1.3;">
+                    I appreciate the excellent support I received throughout my purchase. The product performs exactly as described.
+                  </p>
+                  <div style="font-size: 1.1rem;">
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-warning">&#9733;</span>
+                    <span class="text-secondary">&#9733;</span>
+                    <span class="text-secondary">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            We are committed to providing the best service with quality and dedication.
+            Our mission is to bring innovative solutions to our customers worldwide.
+          </p>
+        </div>
+    
+        <div class="footer-section contact">
+          <h3>Contact</h3>
+          <p><strong>Email:</strong> sarayoussefysa@gmail.com</p>
+          <p><strong>Phone:</strong> +963 931852209</p>
+          <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        </div>
+    
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        &copy; 2025 Your Company. All rights reserved.
+      </div>
+    </footer>
+    
+    <button id="scrollTopBtn" title="Back to Top">↑</button>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+        if (window.scrollY > 100) {
+          scrollBtn.style.display = "flex";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      };
+    
+      scrollBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+      
+    </script>
+    
+  </body>
+</html>
